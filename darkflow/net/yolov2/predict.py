@@ -54,7 +54,7 @@ def postprocess(self, net_out, im, save = True):
 		cv2.rectangle(imgcv,
 			(left, top), (right, bot),
 			colors[max_indx], thick)
-		cv2.putText(imgcv, mess, (left, top - 12),
+		cv2.putText(imgcv, mess + " - " + str(confidence), (left, top - 12),
 			0, 1e-3 * h, colors[max_indx],thick//3)
 
 	if not save: return imgcv
