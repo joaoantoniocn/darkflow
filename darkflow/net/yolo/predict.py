@@ -104,7 +104,7 @@ def postprocess(self, net_out, im, save = True):
 			(left, top), (right, bot),
 			self.meta['colors'][max_indx], thick)
 		cv2.putText(
-			imgcv, mess, (left, top - 12),
+			imgcv, mess + " - " + str(confidence), (left, top - 12),
 			0, 1e-3 * h, self.meta['colors'][max_indx],
 			thick // 3)
 
