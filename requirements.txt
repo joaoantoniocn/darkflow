@@ -1,0 +1,7 @@
+Cython==0.29
+-e git+https://github.com/thtrieu/darkflow.git@b2aee0000cd2a956b9f1de6dbfef94d53158b7d8#egg=darkflow
+numpy==1.15.4
+opencv-python==3.4.3.18
+protobuf==3.6.1
+six==1.11.0
+tensorflow==1.0.0
