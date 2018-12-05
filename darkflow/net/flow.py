@@ -91,7 +91,7 @@ def return_predict(self, im):
             continue
         boxesInfo.append({
             "label": tmpBox[4],
-            "confidence": tmpBox[6],
+            "confidence": float(tmpBox[6]),
             "topleft": {
                 "x": tmpBox[0],
                 "y": tmpBox[2]},
